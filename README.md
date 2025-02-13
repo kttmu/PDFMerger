@@ -17,7 +17,7 @@
 本アプリを使用するには、以下の Python ライブラリが必要です。
 
 ```bash
-pip install tkinterdnd2 PyPDF2 reportlab
+pip install tkinterdnd2 PyPDF2 reportlab pyinstaller
 ```
 
 また、`tkinterdnd2` は OS によって追加のセットアップが必要になる場合があります。
@@ -42,7 +42,8 @@ python PDFMerger.py
 - 保存先を選択し、結合後の PDF を保存
 
 ---
-## **🏃‍♂️‍➡️　Pyinstallerによるexe化
+
+## **🏃‍♂️‍➡️ Pyinstallerによるexe化**
 win11環境でexe化可能なことは確認済み。ターミナル上で以下コマンドを実行。
 ```
 pyinstaller src/PDFMerger.py --onefile -icon ./icon/icon.png
@@ -60,7 +61,7 @@ PDFMerger/
 ---
 
 ## **⚠️ 注意点**
-1. **結合する PDF の順番** はリスト内の並び順に依存します。
+1. **結合する PDF の順番** は昇順でソートされます。接頭に数字を付けるなどして並び順を指定してください。
 2. **ページ番号の追加** は、結合後の PDF 全体に適用されます。
 3. **ファイル名に日本語** を含むと、環境によってはエラーが発生する可能性があります。
 
