@@ -42,6 +42,13 @@ python PDFMerger.py
 - 保存先を選択し、結合後の PDF を保存
 
 ---
+## **🏃‍♂️‍➡️　Pyinstallerによるexe化
+win11環境でexe化可能なことは確認済み。ターミナル上で以下コマンドを実行。
+```
+pyinstaller src/PDFMerger.py --onefile -icon ./icon/icon.png
+```
+
+---
 
 ## **📂 ファイル構成**
 ```
